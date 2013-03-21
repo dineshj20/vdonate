@@ -1,0 +1,137 @@
+#main_menu {
+clear:both;
+display:block;
+height:20px;
+position:relative;
+z-index:100;
+list-style: none;
+margin:0;
+padding:0;
+text-align : left;
+/**	change	**/
+}
+
+#main_menu .moduletable {
+margin:0;
+}
+
+#main_menu li {
+margin:0;
+padding:0;
+height:20px;
+float:left;
+position:relative;
+list-style : none;
+/**	change	**/
+padding-top:13px;
+}
+
+#main_menu li a, #main_menu li span.separator {
+display:block;
+float : none !important;
+float : left;
+position:relative;
+z-index:1000;
+text-decoration:none;
+/**	change	**/
+color: #aaa;
+line-height:22px;
+text-transform: uppercase;
+letter-spacing: -0.5px;
+font-weight: normal;
+font-size:98%;
+padding:0px 18px;
+}
+
+#main_menu li li a, #main_menu li li span.separator{
+/**	change	**/
+color:#aaa;
+float:none;
+font-size:100%;
+line-height: 14px;
+letter-spacing: 0;
+font-weight:normal;
+padding: 7px 4px 7px 8px;
+text-transform:none;
+width:136px;
+margin: 0 6px;
+border-top:1px solid #444;
+}
+
+#main_menu li li:first-child a, #main_menu li li:first-child span.separator {
+border-top:none;
+}
+
+#main_menu li ul {
+width: 160px;
+position:absolute;
+z-index:99;
+left: -999em !important;
+clear:left;
+/**	change	**/
+margin-left:0;
+margin-top:0;
+padding: 6px 0 4px 0;
+background-image:none;
+background-color:#222;
+-moz-box-shadow: 3px 3px 5px rgba(000,000,000, 0.3);
+-webkit-box-shadow: 3px 3px 5px rgba(000,000,000, 0.3);
+box-shadow: 3px 3px 10px rgba(000,000,000, 0.5);
+}
+
+#main_menu li li {
+width:100%;
+height:auto;
+padding:0;
+}
+
+#main_menu li:hover ul, #main_menu li li:hover ul, #main_menu li li li:hover ul,
+#main_menu li.sfhover ul, #main_menu li li.sfhover ul, #main_menu li li li.sfhover ul {
+left: 0 !important;
+}
+
+#main_menu li ul ul {
+margin: 1px 0 0 160px !important;
+/**	change	**/
+padding-top:0;
+z-index:199;
+}
+
+/**	change	**/
+
+#main_menu li:hover, #main_menu li.active, #main_menu li.sfhover {
+border-top: 1px solid #bbb;
+}
+
+#main_menu li ul li:hover, #main_menu li ul li.active, #main_menu li ul li.sfhover {
+border:none;
+}
+
+
+
+
+
+
+/** if active level 1 	**/
+#main_menu li.active > a, #main_menu li.active > span.separator {
+color: #fff;
+text-decoration:none;
+}
+
+/** if active level 2+ 	**/
+#main_menu li.active li.active > a, #main_menu li.active li.active > span.separator {
+color: #fff;
+text-decoration:none;
+}
+
+/** if hover level 1 	**/
+#main_menu li > a:hover, #main_menu li > span.separator:hover {
+color: #fff;
+text-decoration:none;
+}
+
+/** if active level 2+ 	**/
+#main_menu li li > a:hover, #main_menu li li > span.separator:hover {
+color: #fff;
+text-decoration:none;
+}
